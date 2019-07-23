@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="53" failures="52" name="TestSuite" time="39.628" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/xuxiaochan/eclipse-workspace/BankInfoCollectEndpointTest"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/xuxiaochan/eclipse-workspace/BankInfoCollectEndpointTest"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/v6/cn9r0rz57tq9vqc3czdy84wh0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/xuxiaochan/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf2994217249682945635.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/xuxiaochan/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="library.jansi.path" value="/Users/xuxiaochan/Downloads/apache-maven-3.5.0/lib/jansi-native/osx64"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/xuxiaochan"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="xuxiaochan"/>
+    <property name="java.class.path" value="/Users/xuxiaochan/Downloads/apache-maven-3.5.0/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -gs /Users/xuxiaochan/Documents/Maven/Repository/settings.xml -s /Users/xuxiaochan/Documents/Maven/Repository/settings.xml install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="/Users/xuxiaochan/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/xuxiaochan/Downloads/apache-maven-3.5.0"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="1.266"/>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.812">
+    <failure message="expected [{&quot;error&quot;:&quot;&apos;payment_method&apos; field required, the value should be either &apos;LOCAL&apos; or &apos;SWIFT&apos;&quot;}] but found [{&quot;error&quot;:&quot;&apos;bank_country_code&apos; is required, and should be one of &apos;US&apos;, &apos;AU&apos;, or &apos;CN&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;&apos;payment_method&apos; field required, the value should be either &apos;LOCAL&apos; or &apos;SWIFT&apos;&quot;}] but found [{&quot;error&quot;:&quot;&apos;bank_country_code&apos; is required, and should be one of &apos;US&apos;, &apos;AU&apos;, or &apos;CN&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field validate: bank_country_code
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;bank_country_code&apos; is required, and should be one of &apos;US&apos;, &apos;AU&apos;, or &apos;CN&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.814">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;account_name&apos; is required&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;account_name&apos; is required&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field validate: account_name
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;account_name&apos; is required&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.821">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;account_number&apos; is required&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;account_number&apos; is required&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field validate: account_number
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;account_number&apos; is required&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.818">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;account_number&apos; is required&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;account_number&apos; is required&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is US: 0
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;account_number&apos; is required&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.716">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is US: 1
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.718">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is US: 17
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.612">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is US: 18
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>account_number include number &amp; letter validate when bank_country_code is US
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.646">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is AU: 5
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.701">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is AU: 6
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.8">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is AU: 9
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.733">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is AU: 10
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.703">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is CN: 7
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.815">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is CN: 8
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is CN: 20
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.717">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of account_number validate when bank_country_code is CN: 21
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.722">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>optional field of swift_code validate when bank_country_code is LOCAL: swift_code
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.814">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>the 5th and 6th characters of swift_code validate when bank_country_code is US: pass
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.614">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 5th character of swift_code validate when bank_country_code is US: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.614">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 6th character of swift_code validate when bank_country_code is US: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.615">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.815">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 5th character of swift_code validate when bank_country_code is AU: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 6th character of swift_code validate when bank_country_code is AU: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.818">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.716">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 5th character of swift_code validate when bank_country_code is CN: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the 6th character of swift_code validate when bank_country_code is CN: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.818">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the length of swift_code validate: 11
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.717">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the length of swift_code validate: 7
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the length of swift_code validate: 9
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.819">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the length of swift_code validate: 10
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.654">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>the length of swift_code validate: 12
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.777">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field of bsb validate when bank_country_code is AU: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.719">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field of bsb validate when bank_country_code is AU: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.702">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of bsb validate when bank_country_code is US: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.606">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of bsb validate when bank_country_code is US: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.634">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of bsb validate when bank_country_code is CN: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.717">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of bsb validate when bank_country_code is CN: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.728">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of bsb field validate: 5
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.806">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of bsb field validate: 7
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.817">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field of aba validate when bank_country_code is US: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.734">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field of aba validate when bank_country_code is US: fail
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.676">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of aba validate when bank_country_code is AU: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.615">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of abs validate when bank_country_code is AU: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.841">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of bsb validate when bank_country_code is CN: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.716">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>optional field of bsb validate when bank_country_code is CN: pass
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.717">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of abs field validate: 8
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: US&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.615">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>length of aba field validate: 10
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.716">
+    <failure message="expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]" type="java.lang.AssertionError">java.lang.AssertionError: expected [1] but found [{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:90)
+</failure>
+    <system-out>mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code
+HTTP/1.1 400 Bad Request
+{&quot;error&quot;:&quot;&apos;swift_code&apos; is required when payment method is &apos;SWIFT&apos;&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.717">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>optional field of swift_code validate when bank_country_code is LOCAL: swift_code
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.717">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+  <testcase classname="xuxiaochan.test.airwallex.BankInfoEndpointTest" name="(xuxiaochan.test.airwallex.BankInfoEndpointTest)" time="0.716">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:89)
+</failure>
+    <system-out>
+HTTP/1.1 200 OK
+{&quot;success&quot;:&quot;Bank details saved&quot;}
+</system-out>
+  </testcase>
+</testsuite>

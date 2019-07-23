@@ -1,0 +1,2226 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 18 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">64 methods, 18 failed,   46 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass wtih aba, payment_method, SWIFT, b...)">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass wtih aba, payment_method, SWIFT, b...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: fail, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: fail, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb, payment_method, ...)">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb, payment_method, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 5, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 5, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 10, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 10, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the length of swift_code validate: 9, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)">bankInfoCollectEndpointRequest(the length of swift_code validate: 9, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 7, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 7, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass whith bsb, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass whith bsb, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(payment_method is LOCAL and bank_country_code is CN with 20 account_number length, payment_method, L...)">bankInfoCollectEndpointRequest(payment_method is LOCAL and bank_country_code is CN with 20 account_number length, payment_method, L...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 18, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 18, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 21, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 21, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the length of swift_code validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)">bankInfoCollectEndpointRequest(the length of swift_code validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass, payment_method...)">bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass, payment_method...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20 with invalid_abs, payment_method,...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20 with invalid_abs, payment_method,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 6, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 6, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 17, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 17, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of aba validate when bank_country_code is AU: pass with aba, payment_method, SWIFT, b...)">bankInfoCollectEndpointRequest(optional field of aba validate when bank_country_code is AU: pass with aba, payment_method, SWIFT, b...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_name validation: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)">bankInfoCollectEndpointRequest(length of account_name validation: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(account_number include every kinds of characters, payment_method, SWIFT, bank_country_code, US, acco...)">bankInfoCollectEndpointRequest(account_number include every kinds of characters, payment_method, SWIFT, bank_country_code, US, acco...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field validate: account_name, payment_method, SWIFT, bank_country_code, US, invalid_accoun...)">bankInfoCollectEndpointRequest(mandatory field validate: account_name, payment_method, SWIFT, bank_country_code, US, invalid_accoun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field validate: payment_method, invalid_payment_method, SWIFT, bank_country_code, US, acco...)">bankInfoCollectEndpointRequest(mandatory field validate: payment_method, invalid_payment_method, SWIFT, bank_country_code, US, acco...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_name validation: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)">bankInfoCollectEndpointRequest(length of account_name validation: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 9, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 9, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(aba field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)">bankInfoCollectEndpointRequest(aba field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(swift_code field include special character and Chinese, payment_method, SWIFT, bank_country_code, US...)">bankInfoCollectEndpointRequest(swift_code field include special character and Chinese, payment_method, SWIFT, bank_country_code, US...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(account_number include number,letter, special characters &amp; Chinese validate when bank_country_code i...)">bankInfoCollectEndpointRequest(account_number include number,letter, special characters & Chinese validate when bank_country_code i...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of abs validate when bank_country_code is AU: pass with invalid_aba, payment_method, ...)">bankInfoCollectEndpointRequest(optional field of abs validate when bank_country_code is AU: pass with invalid_aba, payment_method, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of aba field validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John S...)">bankInfoCollectEndpointRequest(length of aba field validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 8, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 8, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of bsb field validate: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)">bankInfoCollectEndpointRequest(length of bsb field validate: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: pass, payment_method, SWIFT, bank_coun...)">bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: pass, payment_method, SWIFT, bank_coun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field validate: bank_country_code, payment_method, SWIFT, invalid_bank_country_code, US, a...)">bankInfoCollectEndpointRequest(mandatory field validate: bank_country_code, payment_method, SWIFT, invalid_bank_country_code, US, a...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass, payment_method...)">bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass, payment_method...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code, payment_method, ...)">bankInfoCollectEndpointRequest(mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code, payment_method, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(optional field of swift_code validate when bank_country_code is LOCAL: swift_code, payment_method, L...)">bankInfoCollectEndpointRequest(optional field of swift_code validate when bank_country_code is LOCAL: swift_code, payment_method, L...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 0, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 0, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(bsb field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)">bankInfoCollectEndpointRequest(bsb field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_name validation:1, payment_method, SWIFT, bank_country_code, US, account_name, J, ...)">bankInfoCollectEndpointRequest(length of account_name validation:1, payment_method, SWIFT, bank_country_code, US, account_name, J, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the length of swift_code validate: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)">bankInfoCollectEndpointRequest(the length of swift_code validate: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the length of swift_code validate: 7, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)">bankInfoCollectEndpointRequest(the length of swift_code validate: 7, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 1, payment_method, SWIFT, bank_count...)">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 1, payment_method, SWIFT, bank_count...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of abs field validate: 8, payment_method, SWIFT, bank_country_code, US, account_name, John Sm...)">bankInfoCollectEndpointRequest(length of abs field validate: 8, payment_method, SWIFT, bank_country_code, US, account_name, John Sm...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of account_name validation:2, payment_method, SWIFT, bank_country_code, US, account_name, Jo,...)">bankInfoCollectEndpointRequest(length of account_name validation:2, payment_method, SWIFT, bank_country_code, US, account_name, Jo,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(account_number include number &amp; letter validate when bank_country_code is US, payment_method, SWIFT,...)">bankInfoCollectEndpointRequest(account_number include number & letter validate when bank_country_code is US, payment_method, SWIFT,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(payment_method field is not in the valid enums list, invalid_payment_method, SWEFT, bank_country_cod...)">bankInfoCollectEndpointRequest(payment_method field is not in the valid enums list, invalid_payment_method, SWEFT, bank_country_cod...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(bank_country_code field is not in the valid enums list, payment_method, SWIFT, invalid_bank_country_...)">bankInfoCollectEndpointRequest(bank_country_code field is not in the valid enums list, payment_method, SWIFT, invalid_bank_country_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(length of bsb field validate: 7, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)">bankInfoCollectEndpointRequest(length of bsb field validate: 7, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the length of swift_code validate: 12, payment_method, SWIFT, bank_country_code, US, account_name, J...)">bankInfoCollectEndpointRequest(the length of swift_code validate: 12, payment_method, SWIFT, bank_country_code, US, account_name, J...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)">bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(account_number include number,letter &amp; special characters validate when bank_country_code is US, pay...)">bankInfoCollectEndpointRequest(account_number include number,letter & special characters validate when bank_country_code is US, pay...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is US: pass, payment_method...)">bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is US: pass, payment_method...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(account_name includes every kind of characters, payment_method, SWIFT, bank_country_code, US, accoun...)">bankInfoCollectEndpointRequest(account_name includes every kind of characters, payment_method, SWIFT, bank_country_code, US, accoun...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="xuxiaochan.test.airwallex.BankInfoEndpointTest" hash-for-method="bankInfoCollectEndpointRequest(mandatory field validate: account_number, payment_method, SWIFT, bank_country_code, US, account_name...)">bankInfoCollectEndpointRequest(mandatory field validate: account_number, payment_method, SWIFT, bank_country_code, US, account_name...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">xuxiaochan.test.airwallex.BankInfoEndpointTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass wtih aba, payment_method, SWIFT, b...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass wtih aba, payment_method, SWIFT, b...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of bsb validate when bank_country_code is CN: pass wtih aba, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: fail, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: fail, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field of aba validate when bank_country_code is US: fail, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBJ, invalid_bsb, aacrtu, invalid_aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'aba' is required when bank country code is US"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;&apos;aba&apos; is required when bank country code is US&quot;}] but found [{&quot;success&quot;:&quot;Bank details saved&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb, payment_method, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb, payment_method, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 5, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 5, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is AU: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 12312, swift_code, ICBCAUBJ, bsb, zxzasa, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_number should be between 6 and 9 when bank_country_code is 'AU'"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of account_number should be between 6 and 9 when bank_country_code is &apos;AU&apos;&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 6th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCCABJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"The swift code is not valid for the given bank country code: CN"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: CN&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is CN: 20, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 12321234567890987654, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 10, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 10, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is AU: 10, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 1232345678, swift_code, ICBCAUBJ, bsb, zxzasa, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_number should be between 6 and 9 when bank_country_code is 'AU'"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of account_number should be between 6 and 9 when bank_country_code is &apos;AU&apos;&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the length of swift_code validate: 9, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the length of swift_code validate: 9, payment_method, SWIFT, bank_country_code, US, account_name, Jo...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the length of swift_code validate: 9, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBUD, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of 'swift_code' should be either 8 or 11"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}] but found [{&quot;success&quot;:&quot;Bank details saved&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 5th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCBNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"The swift code is not valid for the given bank country code: CN"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;The swift code is not valid for the given bank country code: CN&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 7, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 7, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is CN: 7, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1212123, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_number should be between 8 and 20 when bank_country_code is 'CN'"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of account_number should be between 8 and 20 when bank_country_code is &apos;CN&apos;&quot;}] but found [{&quot;success&quot;:&quot;Bank details saved&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass whith bsb, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass whith bsb, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of bsb validate when bank_country_code is CN: pass whith bsb, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCCNBJ, bsb, sjanaj, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(payment_method is LOCAL and bank_country_code is CN with 20 account_number length, payment_method, L...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(payment_method is LOCAL and bank_country_code is CN with 20 account_number length, payment_method, L...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(payment_method is LOCAL and bank_country_code is CN with 20 account_number length, payment_method, LOCAL, bank_country_code, CN, account_name, John Smith, account_number, 12345678901234567890, swift_code, ICBUCNBJ, bsb, a1@中Tu, aba, 11122233B, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 18, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 18, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is US: 18, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 123456989112345678, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_number should be between 1 and 17 when bank_country_code is 'US'"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of account_number should be between 1 and 17 when bank_country_code is &apos;US&apos;&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 21, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 21, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is CN: 21, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 123456789012345678901, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_number should be between 8 and 20 when bank_country_code is 'CN'"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of account_number should be between 8 and 20 when bank_country_code is &apos;CN&apos;&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the length of swift_code validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the length of swift_code validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the length of swift_code validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBUDA, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of 'swift_code' should be either 8 or 11"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;error&quot;:&quot;Length of &apos;swift_code&apos; should be either 8 or 11&quot;}] but found [{&quot;success&quot;:&quot;Bank details saved&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of bsb validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCCNBJ, bsb, sjanaj, invalid_aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass, payment_method...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass, payment_method...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 1234567890, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20 with invalid_abs, payment_method,...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20 with invalid_abs, payment_method,...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is CN: 20 with invalid_abs, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 12321234567890987654, swift_code, ICBCCNBJ, invalid_bsb, , invalid_aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [{&quot;success&quot;:&quot;Bank details saved&quot;}] but found [{&quot;error&quot;:&quot;Length of account_number should be between 7 and 11 when bank_country_code is &apos;US&apos;&quot;}]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at xuxiaochan.test.airwallex.BankInfoEndpointTest.bankInfoCollectEndpointRequest(BankInfoEndpointTest.java:129)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">xuxiaochan.test.airwallex.BankInfoEndpointTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 6, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 6, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is AU: 6, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 123212, swift_code, ICBCAUBJ, bsb, zxzasa, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 17, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 17, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is US: 17, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 12345698911234567, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBJ, bsb, dhjshy, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of aba validate when bank_country_code is AU: pass with aba, payment_method, SWIFT, b...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of aba validate when bank_country_code is AU: pass with aba, payment_method, SWIFT, b...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of aba validate when bank_country_code is AU: pass with aba, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 123456789, swift_code, ICBCAUBJ, bsb, dhjshy, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_name validation: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_name validation: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_name validation: 10, payment_method, SWIFT, bank_country_code, US, account_name, JohnSmithj, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field of bsb validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 12345678, swift_code, ICBCAUBJ, bsb, aabuyt, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(account_number include every kinds of characters, payment_method, SWIFT, bank_country_code, US, acco...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(account_number include every kinds of characters, payment_method, SWIFT, bank_country_code, US, acco...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(account_number include every kinds of characters, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, %!@ .5YNn中英, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field validate: account_name, payment_method, SWIFT, bank_country_code, US, invalid_accoun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field validate: account_name, payment_method, SWIFT, bank_country_code, US, invalid_accoun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field validate: account_name, payment_method, SWIFT, bank_country_code, US, invalid_account_name, John Smith, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'account_name' is required"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field validate: payment_method, invalid_payment_method, SWIFT, bank_country_code, US, acco...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field validate: payment_method, invalid_payment_method, SWIFT, bank_country_code, US, acco...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field validate: payment_method, invalid_payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_name validation: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_name validation: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_name validation: 11, payment_method, SWIFT, bank_country_code, US, account_name, JohnSmithab, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_name should be between 2 and 10"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 9, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 9, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is AU: 9, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 123123456, swift_code, ICBCAUBJ, bsb, zxzasa, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(aba field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(aba field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(aba field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBUUSBJ, bsb, aacrtu, aba, 1112中.3bB, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBJ, invalid_bsb, hsjaha, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(swift_code field include special character and Chinese, payment_method, SWIFT, bank_country_code, US...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(swift_code field include special character and Chinese, payment_method, SWIFT, bank_country_code, US...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(swift_code field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, V!中UUS.1, bsb, a1@中Tu, aba, 11122233B, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(account_number include number,letter, special characters &amp; Chinese validate when bank_country_code i...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(account_number include number,letter, special characters & Chinese validate when bank_country_code i...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(account_number include number,letter, special characters & Chinese validate when bank_country_code is US, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1！@#¥……&中（+2f, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of abs validate when bank_country_code is AU: pass with invalid_aba, payment_method, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of abs validate when bank_country_code is AU: pass with invalid_aba, payment_method, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of abs validate when bank_country_code is AU: pass with invalid_aba, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 123456789, swift_code, ICBCAUBJ, bsb, hsjaha, invalid_aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of aba field validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John S...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of aba field validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John S...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of aba field validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBUUSBJ, bsb, aacrtu, aba, 11122233AB, HTTP/1.1 400 Bad Request, {"error":"Length of 'aba' should be 9"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field of bsb validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 12345678, swift_code, ICBCAUBJ, invalid_bsb, aacrtu, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'bsb' is required when bank country code is 'AU'"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 8, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 8, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is CN: 8, payment_method, SWIFT, bank_country_code, CN, account_name, John Smith, account_number, 11234523, swift_code, ICBCCNBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of bsb field validate: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of bsb field validate: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of bsb field validate: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 123456789, swift_code, ICBCAUBJ, bsb, aacrt, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of 'bsb' should be 6"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: pass, payment_method, SWIFT, bank_coun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: pass, payment_method, SWIFT, bank_coun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field of aba validate when bank_country_code is US: pass, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBJ, bsb, aabuyt, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field validate: bank_country_code, payment_method, SWIFT, invalid_bank_country_code, US, a...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field validate: bank_country_code, payment_method, SWIFT, invalid_bank_country_code, US, a...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field validate: bank_country_code, payment_method, SWIFT, invalid_bank_country_code, US, account_name, John Smith, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass, payment_method...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass, payment_method...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 121233, swift_code, ICBCAUBJ, bsb, sjajsj, aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code, payment_method, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code, payment_method, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 123, invalid_swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'swift_code' is required when payment method is 'SWIFT'"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(optional field of swift_code validate when bank_country_code is LOCAL: swift_code, payment_method, L...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(optional field of swift_code validate when bank_country_code is LOCAL: swift_code, payment_method, L...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(optional field of swift_code validate when bank_country_code is LOCAL: swift_code, payment_method, LOCAL, bank_country_code, US, account_name, John Smith, account_number, 123, invalid_swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 0, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 0, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is US: 0, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, , swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'account_number' is required"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(bsb field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(bsb field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(bsb field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBUUSBJ, bsb, a1@中Tu, aba, 11122233B, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_name validation:1, payment_method, SWIFT, bank_country_code, US, account_name, J, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_name validation:1, payment_method, SWIFT, bank_country_code, US, account_name, J, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_name validation:1, payment_method, SWIFT, bank_country_code, US, account_name, J, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of account_name should be between 2 and 10"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the length of swift_code validate: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the length of swift_code validate: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the length of swift_code validate: 11, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSSJABC, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the length of swift_code validate: 7, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the length of swift_code validate: 7, payment_method, SWIFT, bank_country_code, US, account_name, Jo...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the length of swift_code validate: 7, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSB, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of 'swift_code' should be either 8 or 11"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 5th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 123, swift_code, ICBCASBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"The swift code is not valid for the given bank country code: US"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 1, payment_method, SWIFT, bank_count...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 1, payment_method, SWIFT, bank_count...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_number validate when bank_country_code is US: 1, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of abs field validate: 8, payment_method, SWIFT, bank_country_code, US, account_name, John Sm...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of abs field validate: 8, payment_method, SWIFT, bank_country_code, US, account_name, John Sm...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of abs field validate: 8, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBJ, bsb, aacrta, aba, 11122233, HTTP/1.1 400 Bad Request, {"error":"Length of 'aba' should be 9"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 5th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 12345670, swift_code, ICBCBUBJ, bsb, jshjds, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"The swift code is not valid for the given bank country code: AU"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of account_name validation:2, payment_method, SWIFT, bank_country_code, US, account_name, Jo,...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of account_name validation:2, payment_method, SWIFT, bank_country_code, US, account_name, Jo,...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of account_name validation:2, payment_method, SWIFT, bank_country_code, US, account_name, Jo, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(account_number include number &amp; letter validate when bank_country_code is US, payment_method, SWIFT,...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(account_number include number & letter validate when bank_country_code is US, payment_method, SWIFT,...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(account_number include number & letter validate when bank_country_code is US, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234569891123asff, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(payment_method field is not in the valid enums list, invalid_payment_method, SWEFT, bank_country_cod...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(payment_method field is not in the valid enums list, invalid_payment_method, SWEFT, bank_country_cod...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(payment_method field is not in the valid enums list, invalid_payment_method, SWEFT, bank_country_code, US, account_name, John Smith, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(bank_country_code field is not in the valid enums list, payment_method, SWIFT, invalid_bank_country_...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(bank_country_code field is not in the valid enums list, payment_method, SWIFT, invalid_bank_country_...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(bank_country_code field is not in the valid enums list, payment_method, SWIFT, invalid_bank_country_code, AS, account_name, John Smith, account_number, 123, swift_code, ICBCASBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(length of bsb field validate: 7, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(length of bsb field validate: 7, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(length of bsb field validate: 7, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 12345690, swift_code, ICBCAUBJ, bsb, aacrtuw, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of 'bsb' should be 6"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the length of swift_code validate: 12, payment_method, SWIFT, bank_country_code, US, account_name, J...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the length of swift_code validate: 12, payment_method, SWIFT, bank_country_code, US, account_name, J...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the length of swift_code validate: 12, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1234567890, swift_code, ICBCUSBUDASE, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"Length of 'swift_code' should be either 8 or 11"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 6th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 123, swift_code, ICBCUYBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"The swift code is not valid for the given bank country code: US"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 6th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_country_code, AU, account_name, John Smith, account_number, 12345678, swift_code, ICBCAYBJ, bsb, sjahsd, aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"The swift code is not valid for the given bank country code: AU"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(account_number include number,letter &amp; special characters validate when bank_country_code is US, pay...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(account_number include number,letter & special characters validate when bank_country_code is US, pay...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(account_number include number,letter & special characters validate when bank_country_code is US, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 1！@#¥……&*（+2f, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is US: pass, payment_method...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is US: pass, payment_method...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(the 5th and 6th characters of swift_code validate when bank_country_code is US: pass, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(account_name includes every kind of characters, payment_method, SWIFT, bank_country_code, US, accoun...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(account_name includes every kind of characters, payment_method, SWIFT, bank_country_code, US, accoun...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(account_name includes every kind of characters, payment_method, SWIFT, bank_country_code, US, account_name, 1@*Jo 中., account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 200 OK, {"success":"Bank details saved"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="bankInfoCollectEndpointRequest(mandatory field validate: account_number, payment_method, SWIFT, bank_country_code, US, account_name...)">
+                  </a> <!-- bankInfoCollectEndpointRequest(mandatory field validate: account_number, payment_method, SWIFT, bank_country_code, US, account_name...) -->
+                  <span class="method-name">bankInfoCollectEndpointRequest</span>
+                  <span class="parameters">(mandatory field validate: account_number, payment_method, SWIFT, bank_country_code, US, account_name, John Smith, invalid_account_number, 123, swift_code, ICBCUSBJ, invalid_bsb, , aba, 11122233A, HTTP/1.1 400 Bad Request, {"error":"'account_number' is required"})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/v6/cn9r0rz57tq9vqc3czdy84wh0000gn/T/testng-eclipse-1981573518/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;xuxiaochan.test.airwallex.BankInfoEndpointTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(64);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(0, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(0, 3, 883);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(1, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(1, 3, 475);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(2, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(2, 3, 475);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(3, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(3, 3, 444);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(4, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(4, 3, 412);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(5, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(5, 3, 412);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(6, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(6, 3, 411);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(7, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(7, 3, 410);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(8, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(8, 3, 409);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(9, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(9, 3, 409);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(10, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(10, 3, 409);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(11, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(11, 3, 409);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(12, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(12, 3, 409);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(13, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(13, 3, 409);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(14, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(14, 3, 409);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(15, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(15, 3, 409);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(16, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(16, 3, 409);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(17, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(17, 3, 409);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(18, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(18, 3, 408);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(19, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(19, 3, 408);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(20, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(20, 3, 408);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(21, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(21, 3, 408);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(22, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(22, 3, 407);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(23, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(23, 3, 407);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(24, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(24, 3, 407);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(25, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(25, 3, 407);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(26, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(26, 3, 407);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(27, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(27, 3, 407);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(28, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(28, 3, 407);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(29, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(29, 3, 406);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(30, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(30, 3, 406);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(31, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(31, 3, 406);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(32, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(32, 3, 405);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(33, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(33, 3, 405);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(34, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(34, 3, 404);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(35, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(35, 3, 403);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(36, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(36, 3, 394);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(37, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(37, 3, 388);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(38, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(38, 3, 374);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(39, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(39, 3, 373);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(40, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(40, 3, 372);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(41, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(41, 3, 370);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(42, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(42, 3, 369);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(43, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(43, 3, 368);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(44, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(44, 3, 365);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(45, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(45, 3, 362);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(46, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(46, 3, 357);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(47, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(47, 3, 349);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(48, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(48, 3, 346);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(49, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(49, 3, 345);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(50, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(50, 3, 345);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(51, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(51, 3, 344);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(52, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(52, 3, 342);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(53, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(53, 3, 341);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(54, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(54, 3, 341);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(55, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(55, 3, 340);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(56, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(56, 3, 339);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(57, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(57, 3, 339);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(58, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(58, 3, 339);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(59, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(59, 3, 338);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(60, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(60, 3, 338);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(61, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(61, 3, 337);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(62, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(62, 3, 337);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'bankInfoCollectEndpointRequest')
+data.setCell(63, 2, 'xuxiaochan.test.airwallex.BankInfoEndpointTest')
+data.setCell(63, 3, 336);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">xuxiaochan.test.airwallex.BankInfoEndpointTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">readConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field validate: payment_method, invalid_payment_method, SWIFT, bank_country_code, US, acco...)</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(payment_method field is not in the valid enums list, invalid_payment_method, SWEFT, bank_country_cod...)</span>
+                <span class="method-start">907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field validate: bank_country_code, payment_method, SWIFT, invalid_bank_country_code, US, a...)</span>
+                <span class="method-start">1304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(bank_country_code field is not in the valid enums list, payment_method, SWIFT, invalid_bank_country_...)</span>
+                <span class="method-start">1676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field validate: account_name, payment_method, SWIFT, bank_country_code, US, invalid_accoun...)</span>
+                <span class="method-start">2123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_name validation:1, payment_method, SWIFT, bank_country_code, US, account_name, J, ...)</span>
+                <span class="method-start">2533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_name validation:2, payment_method, SWIFT, bank_country_code, US, account_name, Jo,...)</span>
+                <span class="method-start">2942 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_name validation: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)</span>
+                <span class="method-start">3351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_name validation: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)</span>
+                <span class="method-start">3723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(account_name includes every kind of characters, payment_method, SWIFT, bank_country_code, US, accoun...)</span>
+                <span class="method-start">4070 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field validate: account_number, payment_method, SWIFT, bank_country_code, US, account_name...)</span>
+                <span class="method-start">4479 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(account_number include every kinds of characters, payment_method, SWIFT, bank_country_code, US, acco...)</span>
+                <span class="method-start">4887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 0, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">5295 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 1, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">5707 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 17, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">6115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is US: 18, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">6525 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(account_number include number & letter validate when bank_country_code is US, payment_method, SWIFT,...)</span>
+                <span class="method-start">6938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(account_number include number,letter & special characters validate when bank_country_code is US, pay...)</span>
+                <span class="method-start">7344 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(account_number include number,letter, special characters & Chinese validate when bank_country_code i...)</span>
+                <span class="method-start">7751 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 5, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">8163 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 6, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">8589 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 9, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">8979 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is AU: 10, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">9393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 7, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">9800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 8, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">10211 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20 with invalid_abs, payment_method,...)</span>
+                <span class="method-start">10620 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 20, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">11031 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(length of account_number validate when bank_country_code is CN: 21, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">11439 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code, payment_method, ...)</span>
+                <span class="method-start">11850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of swift_code validate when bank_country_code is LOCAL: swift_code, payment_method, L...)</span>
+                <span class="method-start">12259 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is US: pass, payment_method...)</span>
+                <span class="method-start">12602 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)</span>
+                <span class="method-start">13078 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is US: fail, payment_method, SWIFT, ...)</span>
+                <span class="method-start">13449 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass, payment_method...)</span>
+                <span class="method-start">13791 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)</span>
+                <span class="method-start">14149 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is AU: fail, payment_method, SWIFT, ...)</span>
+                <span class="method-start">14512 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass, payment_method...)</span>
+                <span class="method-start">14862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(the 5th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)</span>
+                <span class="method-start">15229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(the 6th character of swift_code validate when bank_country_code is CN: fail, payment_method, SWIFT, ...)</span>
+                <span class="method-start">15639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the length of swift_code validate: 11, payment_method, SWIFT, bank_country_code, US, account_name, J...)</span>
+                <span class="method-start">16049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the length of swift_code validate: 7, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)</span>
+                <span class="method-start">16395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(the length of swift_code validate: 9, payment_method, SWIFT, bank_country_code, US, account_name, Jo...)</span>
+                <span class="method-start">16732 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(the length of swift_code validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, J...)</span>
+                <span class="method-start">17145 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(the length of swift_code validate: 12, payment_method, SWIFT, bank_country_code, US, account_name, J...)</span>
+                <span class="method-start">17486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: pass, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">17824 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field of bsb validate when bank_country_code is AU: fail, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">18300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">18710 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is US: pass, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">19050 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb, payment_method, ...)</span>
+                <span class="method-start">19425 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass whith bsb, payment_method, SWIFT, ...)</span>
+                <span class="method-start">19836 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of bsb field validate: 5, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)</span>
+                <span class="method-start">20247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of bsb field validate: 7, payment_method, SWIFT, bank_country_code, AU, account_name, John Sm...)</span>
+                <span class="method-start">20655 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: pass, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">21065 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(mandatory field of aba validate when bank_country_code is US: fail, payment_method, SWIFT, bank_coun...)</span>
+                <span class="method-start">21474 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of aba validate when bank_country_code is AU: pass with aba, payment_method, SWIFT, b...)</span>
+                <span class="method-start">21819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of abs validate when bank_country_code is AU: pass with invalid_aba, payment_method, ...)</span>
+                <span class="method-start">22158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass wtih aba, payment_method, SWIFT, b...)</span>
+                <span class="method-start">22562 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(optional field of bsb validate when bank_country_code is CN: pass, payment_method, SWIFT, bank_count...)</span>
+                <span class="method-start">22909 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of abs field validate: 8, payment_method, SWIFT, bank_country_code, US, account_name, John Sm...)</span>
+                <span class="method-start">23250 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(length of aba field validate: 10, payment_method, SWIFT, bank_country_code, US, account_name, John S...)</span>
+                <span class="method-start">23625 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(aba field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)</span>
+                <span class="method-start">23965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(bsb field include special character and Chinese, payment_method, SWIFT, bank_country_code, US, accou...)</span>
+                <span class="method-start">24304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">bankInfoCollectEndpointRequest(swift_code field include special character and Chinese, payment_method, SWIFT, bank_country_code, US...)</span>
+                <span class="method-start">24646 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">bankInfoCollectEndpointRequest(payment_method is LOCAL and bank_country_code is CN with 20 account_number length, payment_method, L...)</span>
+                <span class="method-start">25019 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
