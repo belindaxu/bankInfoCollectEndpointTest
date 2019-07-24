@@ -9,5 +9,5 @@
 2. Clone project from github "**https://github.com/belindaxu/bankInfoCollectEndpointTest.git**".
 3. Command steps:
 * On Windows OS go into project file directory click **startup.bat**.
-* On Linux OS execute cd into project file directory execute"**sh startup.sh**".
+* On Linux OS cd into project file directory execute"**sh startup.sh**".
 4. Check testreport: test-output\**index.html**.
