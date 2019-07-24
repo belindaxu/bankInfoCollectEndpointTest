@@ -10,5 +10,6 @@
 2. Download project 
 3. Command steps:
 * Cd into project file directory in command line, execute "**mvn dependency:copy-dependencies -DoutputDirectory=lib**" to download the dependencies of the project.
-* Execute "**java -classpath target\test-classes;target\classes;junit-4.13-beta-1.jar;lib\testng-6.10.jar;lib\httpclient-4.5.5.jar;lib\httpcore-4.4.9.jar;lib\commons-logging-1.2.jar;lib\commons-codec-1.10.jar;lib\fastjson-1.2.21.jar;lib\jcommander-1.48.jar org.testng.TestNG testng-customsuite.xml**".
+* On windows OS execute "**java -classpath target\test-classes;target\classes;junit-4.13-beta-1.jar;lib\testng-6.10.jar;lib\httpclient-4.5.5.jar;lib\httpcore-4.4.9.jar;lib\commons-logging-1.2.jar;lib\commons-codec-1.10.jar;lib\fastjson-1.2.21.jar;lib\jcommander-1.48.jar org.testng.TestNG testng-customsuite.xml**".
+"**java -classpath target/test-classes:target/classes:junit-4.13-beta-1.jar:lib/testng-6.10.jar:lib/httpclient-4.5.5.jar:lib/httpcore-4.4.9.jar:lib/commons-logging-1.2.jar:lib/commons-codec-1.10.jar:lib/fastjson-1.2.21.jar:lib/jcommander-1.48.jar org.testng.TestNG testng-customsuite.xml**".
 4. Check testreport: **test-output\index.html**
