@@ -9,5 +9,5 @@ a. maven
 
 1. Download project 
 2. Command steps:
-a. mvn dependency:copy-dependencies
+a. mvn dependency:copy-dependencies -DoutputDirectory=lib
 b. 
