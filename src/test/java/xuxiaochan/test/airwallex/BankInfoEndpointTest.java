@@ -1,16 +1,21 @@
 package xuxiaochan.test.airwallex;
 
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Map;
+import java.util.Properties;
+import java.util.ResourceBundle;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLContext;
@@ -38,7 +43,7 @@ import org.testng.asserts.Assertion;
 import com.alibaba.fastjson.JSONObject;
 
 public class BankInfoEndpointTest{
-	String URLStr = null;
+	String urlStr = null;
 	String[] caseDiscriptions = null;
 	int index = 0;
 	String configStrings[] = null;
@@ -55,29 +60,27 @@ public class BankInfoEndpointTest{
     
     @BeforeSuite(alwaysRun = true)
     private void readConfig( ) {
-    	BufferedReader bReader = null;
+    	InputStream inputStream = ClassLoader.getSystemResourceAsStream("config/user.properties");
+    	Properties properties = new Properties();
     	try {
-			bReader = new BufferedReader(new FileReader("/Users/xuxiaochan/eclipse-workspace/BankInfoCollectEndpointTest/src/test/resources/config/user.properties"));
-			configStrings = bReader.readLine().split(",");
-		} catch (FileNotFoundException e) {
+			properties.load(inputStream);
+			urlStr = properties.getProperty("requestUrl");
+		} catch (IOException e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
 		}
-    	URLStr = configStrings[0];
+    	System.out.print("debugdebug: " + urlStr);
     }
 
 	@DataProvider(name = "bankInfo")
 	public String[][] getBankInfoRequestParameters(Method m) throws IOException {
-		
+		URL caseDocPath = ClassLoader.getSystemResource("testcaseParameters/testData.csv");
+		System.out.print("debugdebug::" + caseDocPath.getPath());
 		//存储
 		ArrayList<String[]> parametersArray = new ArrayList<String[]>();
 		try {
 			BufferedReader bReader = new BufferedReader(new FileReader(
-					"/Users/xuxiaochan/eclipse-workspace/BankInfoCollectEndpointTest/src/test/resources/testcaseParameters/testData.csv"));
-			///Users/xuxiaochan/eclipse-workspace/BankInfoCollectEndpointTest/src/test/resources/testcaseParameters/testData.csv
+					caseDocPath.getPath()));
 			String line = null;
 			String split = ";";
 			while ((line = bReader.readLine()) != null) {
@@ -101,7 +104,7 @@ public class BankInfoEndpointTest{
 	public void bankInfoCollectEndpointRequest(String description, String key_payment_method, String  payment_method, String  key_bank_country_code, String  bank_country_code, String  key_account_name, String  account_name, String  key_account_number, String  account_number, String  key_swift_code, String  swift_code, String  key_bsb, String bsb, String  key_aba, String aba, String expected_statusLine, String  expected_responseEntityString) throws ParseException, IOException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException {
 		System.out.println(description);
 		CloseableHttpClient client = createAcceptSelfSignedCertificateClient();
-		HttpPost post = new HttpPost(URLStr);
+		HttpPost post = new HttpPost(urlStr);
 		post.addHeader("Content-Type", "application/json;charset=UTF-8");
 		CloseableHttpResponse response = null;
 		JSONObject requetJson = new JSONObject();
