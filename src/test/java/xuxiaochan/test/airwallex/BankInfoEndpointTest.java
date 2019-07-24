@@ -3,9 +3,11 @@ package xuxiaochan.test.airwallex;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Method;
 import java.net.URL;
@@ -34,6 +36,7 @@ import org.apache.http.ssl.SSLContextBuilder;
 import org.apache.http.util.EntityUtils;
 import org.testng.Assert;
 import org.testng.ITest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -47,6 +50,7 @@ public class BankInfoEndpointTest{
 	String[] caseDiscriptions = null;
 	int index = 0;
 	String configStrings[] = null;
+	PrintWriter out = null;
 	
 	private static CloseableHttpClient createAcceptSelfSignedCertificateClient() throws KeyManagementException, NoSuchAlgorithmException, KeyStoreException {
 		SSLContext sslContext = SSLContextBuilder.create().loadTrustMaterial(new TrustSelfSignedStrategy()).build();
@@ -59,7 +63,7 @@ public class BankInfoEndpointTest{
 	}
     
     @BeforeSuite(alwaysRun = true)
-    private void readConfig( ) {
+    private void readConfig( ) throws FileNotFoundException {
     	InputStream inputStream = ClassLoader.getSystemResourceAsStream("config/user.properties");
     	Properties properties = new Properties();
     	try {
@@ -69,12 +73,13 @@ public class BankInfoEndpointTest{
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+    	
+    	out= new PrintWriter(new FileOutputStream("projectDebug.log"));
     }
 
 	@DataProvider(name = "bankInfo")
 	public String[][] getBankInfoRequestParameters(Method m) throws IOException {
 		URL caseDocPath = ClassLoader.getSystemResource("testcaseParameters/testData.csv");
-		System.out.print("debugdebug::" + caseDocPath.getPath());
 		//存储
 		ArrayList<String[]> parametersArray = new ArrayList<String[]>();
 		try {
@@ -102,6 +107,7 @@ public class BankInfoEndpointTest{
 	@Test(dataProvider = "bankInfo")
 	public void bankInfoCollectEndpointRequest(String description, String key_payment_method, String  payment_method, String  key_bank_country_code, String  bank_country_code, String  key_account_name, String  account_name, String  key_account_number, String  account_number, String  key_swift_code, String  swift_code, String  key_bsb, String bsb, String  key_aba, String aba, String expected_statusLine, String  expected_responseEntityString) throws ParseException, IOException, KeyManagementException, NoSuchAlgorithmException, KeyStoreException {
 		System.out.println(description);
+		out.println(description);
 		CloseableHttpClient client = createAcceptSelfSignedCertificateClient();
 		HttpPost post = new HttpPost(urlStr);
 		post.addHeader("Content-Type", "application/json;charset=UTF-8");
@@ -114,9 +120,10 @@ public class BankInfoEndpointTest{
 		requetJson.put(key_swift_code, swift_code);
 		requetJson.put(key_bsb, bsb);
 		requetJson.put(key_aba, aba);
+		out.println(requetJson.toString());
+		System.out.println(requetJson.toString());
 		post.setEntity(new StringEntity(requetJson.toString(), "UTF-8"));
-		try {
-			response = client.execute(post);
+		try {			response = client.execute(post);
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -126,9 +133,16 @@ public class BankInfoEndpointTest{
 		}
 		String statusLine = response.getStatusLine().toString();
 		System.out.println(statusLine);
+		out.println(statusLine);
 		String responseEntityString = EntityUtils.toString(response.getEntity());
 		System.out.println(responseEntityString);
+		out.println(responseEntityString);
 		Assert.assertEquals(responseEntityString, expected_responseEntityString);
 		Assert.assertEquals(statusLine,expected_statusLine);
 	}
+	
+	@AfterSuite(alwaysRun = true)
+    private void tearDown( ) {
+    	out.close();
+    }
 }

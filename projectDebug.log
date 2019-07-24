@@ -1,0 +1,292 @@
+1 mandatory field validate: payment_method
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","invalid_payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"}
+2 payment_method field is not in the valid enums list
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","invalid_payment_method":"SWEFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'payment_method' field required, the value should be either 'LOCAL' or 'SWIFT'"}
+3 mandatory field validate: bank_country_code
+{"account_number":"123","aba":"11122233A","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bank_country_code":"US","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"}
+4 bank_country_code field is not in the valid enums list
+{"account_number":"123","aba":"11122233A","swift_code":"ICBCASBJ","account_name":"John Smith","invalid_bank_country_code":"AS","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'bank_country_code' is required, and should be one of 'US', 'AU', or 'CN'"}
+5 mandatory field validate: account_name
+{"account_number":"123","aba":"11122233A","invalid_account_name":"John Smith","bank_country_code":"US","swift_code":"ICBCUSBJ","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'account_name' is required"}
+6 length of account_name validation:1
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"J","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_name should be between 2 and 10"}
+7 length of account_name validation:2
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"Jo","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+8 length of account_name validation: 10
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"JohnSmithj","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+9 length of account_name validation: 11
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"JohnSmithab","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_name should be between 2 and 10"}
+10 account_name includes every kind of characters
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"1@*Jo 中.","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+11 mandatory field validate: account_number
+{"aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_account_number":"123","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'account_number' is required"}
+12 account_number include every kinds of characters
+{"account_number":"%!@ .5YNn中英","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+13 length of account_number validate when bank_country_code is US: 0
+{"account_number":"","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'account_number' is required"}
+14 length of account_number validate when bank_country_code is US: 1
+{"account_number":"1","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+15 length of account_number validate when bank_country_code is US: 17
+{"account_number":"12345698911234567","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+16 length of account_number validate when bank_country_code is US: 18
+{"account_number":"123456989112345678","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+17 account_number include number & letter validate when bank_country_code is US
+{"account_number":"1234569891123asff","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+18 account_number include number,letter & special characters validate when bank_country_code is US
+{"account_number":"1！@#¥……&*（+2f","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+19 account_number include number,letter, special characters & Chinese validate when bank_country_code is US
+{"account_number":"1！@#¥……&中（+2f","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+20 length of account_number validate when bank_country_code is AU: 5
+{"bsb":"zxzasa","account_number":"12312","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+21 length of account_number validate when bank_country_code is AU: 6
+{"bsb":"zxzasa","account_number":"123212","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+22 length of account_number validate when bank_country_code is AU: 9
+{"bsb":"zxzasa","account_number":"123123456","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+23 length of account_number validate when bank_country_code is AU: 10
+{"bsb":"zxzasa","account_number":"1232345678","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+24 length of account_number validate when bank_country_code is CN: 7
+{"account_number":"1212123","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+24.1 length of account_number validate when bank_country_code is CN: 6
+{"account_number":"121212","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25 length of account_number validate when bank_country_code is CN: 8
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25.1 length of account_number validate when bank_country_code is CN: 9
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25.2 length of account_number validate when bank_country_code is CN: 10
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25.3 length of account_number validate when bank_country_code is CN: 11
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25.4 length of account_number validate when bank_country_code is CN: 12
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25.5 length of account_number validate when bank_country_code is CN: 17
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+25.6 length of account_number validate when bank_country_code is CN: 18
+{"account_number":"11234523","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+26 length of account_number validate when bank_country_code is CN: 20 with invalid_abs
+{"account_number":"12321234567890987654","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_aba":"11122233A","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+27 length of account_number validate when bank_country_code is CN: 20
+{"account_number":"12321234567890987654","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+28 length of account_number validate when bank_country_code is CN: 21
+{"account_number":"123456789012345678901","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+29 mandatory field of swift_code validate when bank_country_code is SWIFT: swift_code
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","invalid_swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'swift_code' is required when payment method is 'SWIFT'"}
+30 optional field of swift_code validate when bank_country_code is LOCAL: swift_code
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","invalid_swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"LOCAL"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+31 the 5th and 6th characters of swift_code validate when bank_country_code is US: pass
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+32 the 5th character of swift_code validate when bank_country_code is US: fail
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCASBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"The swift code is not valid for the given bank country code: US"}
+33 the 6th character of swift_code validate when bank_country_code is US: fail
+{"account_number":"123","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUYBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"The swift code is not valid for the given bank country code: US"}
+34 the 5th and 6th characters of swift_code validate when bank_country_code is AU: pass
+{"bsb":"sjajsj","account_number":"121233","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+35 the 5th character of swift_code validate when bank_country_code is AU: fail
+{"bsb":"jshjds","account_number":"12345670","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCBUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"The swift code is not valid for the given bank country code: AU"}
+36 the 6th character of swift_code validate when bank_country_code is AU: fail
+{"bsb":"sjahsd","account_number":"12345678","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAYBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"The swift code is not valid for the given bank country code: AU"}
+37 the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+37.1 the 5th and 6th characters of swift_code validate when bank_country_code is CN: pass
+{"account_number":"1234567","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+38 the 5th character of swift_code validate when bank_country_code is CN: fail
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCBNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+39 the 6th character of swift_code validate when bank_country_code is CN: fail
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCABJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+39.1 the 6th character of swift_code validate when bank_country_code is CN: fail
+{"account_number":"1234567","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCABJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"The swift code is not valid for the given bank country code: CN"}
+40 the length of swift_code validate: 11
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSSJABC","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+41 the length of swift_code validate: 7
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSB","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of 'swift_code' should be either 8 or 11"}
+42 the length of swift_code validate: 9
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBUD","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+43 the length of swift_code validate: 10
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBUDA","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+44 the length of swift_code validate: 12
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBUDASE","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of 'swift_code' should be either 8 or 11"}
+45 mandatory field of bsb validate when bank_country_code is AU: pass
+{"bsb":"aabuyt","account_number":"12345678","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+46 mandatory field of bsb validate when bank_country_code is AU: fail
+{"account_number":"12345678","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","invalid_bsb":"aacrtu","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"'bsb' is required when bank country code is 'AU'"}
+47 optional field of bsb validate when bank_country_code is US: pass
+{"bsb":"dhjshy","account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+48 optional field of bsb validate when bank_country_code is US: pass
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_bsb":"hsjaha","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+49 optional field of bsb validate when bank_country_code is CN: pass with invalid_bsb
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+50 optional field of bsb validate when bank_country_code is CN: pass whith bsb
+{"bsb":"sjanaj","account_number":"1234567890","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+51 length of bsb field validate: 5
+{"bsb":"aacrt","account_number":"123456789","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of 'bsb' should be 6"}
+52 length of bsb field validate: 7
+{"bsb":"aacrtuw","account_number":"12345690","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of 'bsb' should be 6"}
+53 mandatory field of aba validate when bank_country_code is US with aba: pass
+{"bsb":"aabuyt","account_number":"1234567890","aba":"11122233A","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+54 mandatory field of aba validate when bank_country_code is US with invalid_aba: fail
+{"account_number":"1234567890","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","invalid_aba":"11122233A","invalid_bsb":"aacrtu","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+55 optional field of aba validate when bank_country_code is AU: pass with aba
+{"bsb":"dhjshy","account_number":"123456789","aba":"11122233A","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+56 optional field of abs validate when bank_country_code is AU: pass with invalid_aba
+{"bsb":"hsjaha","account_number":"123456789","bank_country_code":"AU","swift_code":"ICBCAUBJ","account_name":"John Smith","invalid_aba":"11122233A","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+57 optional field of bsb validate when bank_country_code is CN: pass wtih aba
+{"account_number":"1234567890","aba":"11122233A","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_bsb":"","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+58 optional field of bsb validate when bank_country_code is CN: pass
+{"bsb":"sjanaj","account_number":"1234567890","bank_country_code":"CN","swift_code":"ICBCCNBJ","account_name":"John Smith","invalid_aba":"11122233A","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
+59 length of abs field validate: 8
+{"bsb":"aacrta","account_number":"1234567890","aba":"11122233","bank_country_code":"US","swift_code":"ICBCUSBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of 'aba' should be 9"}
+60 length of aba field validate: 10
+{"bsb":"aacrtu","account_number":"1234567890","aba":"11122233AB","bank_country_code":"US","swift_code":"ICBUUSBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of 'aba' should be 9"}
+61 aba field include special character and Chinese
+{"bsb":"aacrtu","account_number":"1234567890","aba":"1112中.3bB","bank_country_code":"US","swift_code":"ICBUUSBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+62 bsb field include special character and Chinese
+{"bsb":"a1@中Tu","account_number":"1234567890","aba":"11122233B","bank_country_code":"US","swift_code":"ICBUUSBJ","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+63 swift_code field include special character and Chinese
+{"bsb":"a1@中Tu","account_number":"1234567890","aba":"11122233B","bank_country_code":"US","swift_code":"V!中UUS.1","account_name":"John Smith","payment_method":"SWIFT"}
+HTTP/1.1 200 OK
+{"success":"Bank details saved"}
+64 payment_method is LOCAL and bank_country_code is CN with 20 account_number length
+{"bsb":"a1@中Tu","account_number":"12345678901234567890","aba":"11122233B","bank_country_code":"CN","swift_code":"ICBUCNBJ","account_name":"John Smith","payment_method":"LOCAL"}
+HTTP/1.1 400 Bad Request
+{"error":"Length of account_number should be between 7 and 11 when bank_country_code is 'US'"}
